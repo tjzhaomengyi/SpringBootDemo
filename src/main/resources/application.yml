@@ -1,0 +1,33 @@
+server:
+  port: 8882
+spring:
+  profiles:
+    active: dev
+
+---
+server:
+  port: 8889
+spring:
+  profiles: dev
+
+---
+server:
+  port: 8884
+spring:
+  profiles:test
+
+student:
+  name: ${student.name}
+#  age: 23
+  sex: true
+  birthday: 2019/02/12
+  location: {province: 陕西,city: 西安,zone: 莲湖}
+  hobbies:
+    - 足球
+    - 篮球
+  skills:
+    - 编程
+    - 金融
+  pet:
+    nickName: wc
+    strain: hsq
